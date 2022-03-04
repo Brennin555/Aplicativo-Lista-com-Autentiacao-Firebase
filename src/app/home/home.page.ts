@@ -22,7 +22,7 @@ export class HomePage {
 
   async showAdd() {
     const alert = await this.alertCtrl.create({
-      cssClass: 'my-custom-class',
+      cssClass: 'secondary',
       header: 'Cadastrar nova tarefa:',
       inputs: [
         {
@@ -158,10 +158,5 @@ export class HomePage {
 
     await alert.present();
   }
-
-    openMenu()
-    {
-      
-    }
 
 }
