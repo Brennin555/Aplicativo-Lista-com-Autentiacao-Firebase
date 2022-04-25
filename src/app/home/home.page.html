@@ -1,16 +1,21 @@
 <ion-header [translucent]="false">
   <ion-toolbar color="primary">
-    
+
     <ion-grid>
       <ion-row>
         <ion-col>
-          <div></div>
+          <div>
+          </div>
         </ion-col>
         <ion-col size="auto">
           <div>LISTA DE TAREFAS</div>
         </ion-col>
         <ion-col>
-          <div></div>
+          <div>
+            <ion-buttons slot="end" (click)="authService.SignOut()">
+              <ion-icon name="log-out-outline" size="large" slot="end"></ion-icon>
+            </ion-buttons>
+          </div>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -22,7 +27,7 @@
   <ion-list>
     <ion-item-sliding *ngFor="let task of tasks">
       <ion-item (click)="openActions(task)">
- 
+
         <ion-label *ngIf="!task.done" color={{task.color}}>{{task.cat}} : {{task.name}}</ion-label>
         <ion-label *ngIf="task.done" color={{task.color}}><del>{{task.cat}} : {{task.name}}</del></ion-label>
 

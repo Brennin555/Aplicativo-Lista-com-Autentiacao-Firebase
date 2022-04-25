@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" size="large" [routerLink]="['/home2']"></ion-icon>
+    </ion-buttons>
+    <ion-title class="text-center-title">LOGAR</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="full">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" #email required></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password" #password required></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" (click)="logIn(email, password)" expand="block">Login</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="block" color="warning" [routerLink]="['/password-reset']">
+        Resetar senha
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" color="danger" (click)="authService.GoogleAuth()" expand="block">
+        Login com o Google
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

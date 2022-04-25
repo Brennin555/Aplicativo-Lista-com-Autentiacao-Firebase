@@ -24,3 +24,36 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.text-center-title{
+  text-align: center;
+  padding-right: 50px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.espaco{
+  padding-bottom: 40%;
+
+}
+
+.icon-4em{
+  font-size: 4em;
+}
+
+.icon-7em{
+  font-size: 7em;
+}
+
+.textinho{
+  color: gray;
+  font-size: 90%;
+  padding-left: 25%;
+}
+.textinho2{
+  color: gray;
+  font-size: 90%;
+  padding-left: 35%;
+}

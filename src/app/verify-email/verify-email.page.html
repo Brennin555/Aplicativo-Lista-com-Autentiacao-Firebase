@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-outline" size="large" [routerLink]="['/home2']"></ion-icon>
+    </ion-buttons>
+    <ion-title class="text-center-title">Verificação por Email</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <h2>Verificação por Email</h2>
+      <p>
+        Por favor, verifique seu email e clique no link para confirmar seu endereço de email.
+      </p>
+      <ion-button type="submit" (click)="authService.SendVerificationMail()" expand="block">
+        Reenviar verificação no email
+      </ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

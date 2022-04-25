@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="text-center"> LISTA DE TAREFAS </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="auth-form">
+
+  <h1 class="text-center">
+    <ion-icon name="reader-outline" class="icon-7em"></ion-icon>
+  </h1>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-center">
+
+        <ion-label class="textinho">Crie uma conta para começar</ion-label>
+
+        <ion-button [routerLink]="['/registration']" expand="block" color="tertiary">Cadastrar</ion-button>
+
+        <ion-label class="textinho2">Já tem uma conta?</ion-label>
+
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Logar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
